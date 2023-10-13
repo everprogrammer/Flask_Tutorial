@@ -60,7 +60,7 @@ def list_pup():
     puppies = Puppy.query.all()
     return render_template('list.html', puppies=puppies)
 
-@app.route('/delete', mehtods=['GET', 'POST'])
+@app.route('/delete', methods=['GET', 'POST'])
 def del_pup():
 
     form = DelForm()
@@ -73,7 +73,7 @@ def del_pup():
         db.session.commit()
 
         return redirect(url_for('list_pup'))
-    return render_template('delete.html')
+    return render_template('delete.html', form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)

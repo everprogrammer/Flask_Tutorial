@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="{{url_for('index')}}">Home</a>
+            <a href="{{url_for('add_pup')}}">Add puppy</a>
+            <a href="{{url_for('list_pup')}}">List of puppies</a>
+            <a href="{{url_for('del_pup')}}">Delete puppy</a>
+        </div>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
