@@ -4,6 +4,7 @@
 
 # my_pass = 'supersecretpassword'
 
+# hashed_pass = bcrypt.generate_password_hash(my_pass)
 
 # print(hashed_pass)
 
